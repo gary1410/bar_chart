@@ -7,3 +7,4 @@ FactoryGirl.define do
   	cost 65
   end
 end
+
