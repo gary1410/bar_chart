@@ -5,9 +5,7 @@ class School < ActiveRecord::Base
 	def self.build_chart
 		p = School.all
 		m = Organization.all
-		grouped_by_math = (p + m).group_by { |s| p s.average_cost_per_megabit}
-		
-		return grouped_by_math.each { |key, object| grouped_by_math[key] = object.first.ben }.invert
+		return grouped_by_math = (p + m).map { |s| [s.ben, s.average_cost_per_megabit]}
 	end
 
 #calcuates_average_cost_per_megabit
