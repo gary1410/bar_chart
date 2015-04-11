@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "mongoid", "~> 4.0.0"
+gem 'bson_ext'
+gem 'chartkick'
 
 group :development do
 
