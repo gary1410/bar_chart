@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150410224729) do
   enable_extension "plpgsql"
 
   create_table "school_purchases", force: :cascade do |t|
+    t.integer  "school_id"
     t.string   "ben"
     t.integer  "bandwidth"
     t.string   "measure"

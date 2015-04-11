@@ -92,7 +92,7 @@ test:
     default:
       database: bar_chart_test
       hosts:
-        - localhost:27017
+        - localhost:27018
       options:
         read: primary
         # In the test environment we lower the retries and retry interval to
