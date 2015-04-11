@@ -30,4 +30,5 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'pry-rails'
+  gem 'mongoid-rspec', '~> 2.1.0'
 end

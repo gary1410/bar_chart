@@ -8,6 +8,7 @@ require 'capybara/rails'
 require 'capybara/rspec'
 require 'shoulda/matchers'
 
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -30,6 +31,7 @@ require 'shoulda/matchers'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+  config.include Mongoid::Matchers, type: :model
   config.include FactoryGirl::Syntax::Methods
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
