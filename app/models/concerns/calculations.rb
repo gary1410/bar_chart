@@ -1,5 +1,4 @@
 module Calculations
-	extend self
 
 	def average_cost_per_megabit 
 		sum_of_purchases / total_number_of_purchases
