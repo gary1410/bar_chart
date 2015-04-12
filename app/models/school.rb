@@ -3,9 +3,8 @@ class School < ActiveRecord::Base
 	has_many :school_purchases, primary_key: 'ben', foreign_key: 'ben'
 
 	def self.build_chart
-		p = School.all
-		m = Organization.all
-		ben_and_avg_cost = (p + m).map { |s| [s.ben, s.average_cost_per_megabit]}
+		all_schools = School.all + Organization.all
+		ben_and_avg_cost = all_schools.map { |school_obj| [school_obj.ben, school_obj.average_cost_per_megabit]}
 	end
 
 #calcuates_average_cost_per_megabit
