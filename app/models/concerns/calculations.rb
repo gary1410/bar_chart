@@ -1,16 +1,7 @@
 module Calculations
-	extend self
 
 	def average_cost_per_megabit 
 		sum_of_purchases / total_number_of_purchases
-	end
-
-	def purchases
-		if School 
-			school_purchases
-		elsif Organization
-			purchases
-		end
 	end
 
 	def sum_of_purchases
@@ -35,6 +26,16 @@ module Calculations
 			bandwidth.to_f * 1000
 		when "t"
 			bandwidth.to_f * 1000 * 1000
+		end
+	end
+
+	private
+
+	def purchases
+		if School 
+			school_purchases
+		elsif Organization
+			purchases
 		end
 	end
 
