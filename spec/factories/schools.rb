@@ -4,3 +4,4 @@ FactoryGirl.define do
   	ben "123456"
   end
 end
+
