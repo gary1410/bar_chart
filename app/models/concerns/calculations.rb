@@ -1,6 +1,12 @@
 module Calculations
 
-	def average_cost_per_megabit 
+# no test for average_cost_per_megabit 
+# model test controller test?
+
+# buy in on testing
+
+
+	def average_cost_per_megabit
 		sum_of_purchases / total_number_of_purchases
 	end
 
